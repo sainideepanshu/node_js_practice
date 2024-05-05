@@ -1,11 +1,11 @@
 const fs = require("fs");
 
 
-// Synchronous , it will return something
+// Synchronous , it will return something , Blocking request/operation
 fs.writeFileSync("./test.txt","Hey we have created a file Synchronously");  // writeFileSync overrides the given file 
 
 
-// Asynchronously , they expect a callback function
+// Asynchronously , they expect a callback function , Non-Blocking request/operation
 fs.writeFile("./dummy.txt","Hey we have created a file Asynchronously",(err) => {    // writeFile overrides the given file 
 
 });
